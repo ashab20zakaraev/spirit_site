@@ -1,0 +1,24 @@
+.services {
+    width: 100%;
+    padding: 84px 0 70px 0;
+}
+
+.services-border {
+    border: 3px solid $customColor;
+}
+
+.services__name {
+    color: $bgColor;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    margin: 20px 0 10px 0;
+}
+
+.services__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $bgColor;
+}

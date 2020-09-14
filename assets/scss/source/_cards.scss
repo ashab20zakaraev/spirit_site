@@ -1,0 +1,39 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards__item {
+    width: 100%;
+    max-width: 281px;
+    height: auto;
+    text-align: center;
+    
+    margin: 20px 0;
+    
+    &--sm {
+        max-width: 262px;
+    }
+}
+
+.cards__photo {
+    max-width: 127px;
+    height: 127px;
+    margin: 0 auto;
+    
+    border-radius: 50%;
+    overflow: hidden;
+    
+    &--flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards__item {
+        margin: 20px auto;
+    }
+}

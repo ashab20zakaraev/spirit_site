@@ -1,0 +1,182 @@
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: $bgColor;
+    
+    margin-top: 40px;
+    
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    z-index: 2;
+    
+    &.fixed {
+        position: fixed;
+        z-index: 5;
+        
+        margin-top: 0;
+        
+        background-color: $mainColor;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    }
+}
+
+.header__inner {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: $plainFont;
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+    text-transform: uppercase;
+    
+    position: relative;
+    
+    &:after {
+        content: "";
+        
+        display: block;
+        
+        position: absolute;
+        top: 120%;
+        left: 0;
+        z-index: 1;
+        
+        width: 0;
+        height: 3px;
+        
+        background-color: $customColor;
+        
+        transition: all .3s linear;
+    }
+    
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    
+    .nav__link {
+        font-family: $plainFont;
+        font-weight: 700;
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+        
+        margin-right: 30px;
+        
+        position: relative;
+        
+        &:hover {
+            cursor: none;
+        }
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &:before {
+            content: "";
+            
+            display: block;
+            
+            position: absolute;
+            top: 130%;
+            left: 0;
+            z-index: 1;
+            
+            width: 0;
+            height: 3px;
+            background-color: #393939;
+            
+            transition: all .2s linear;
+        }
+        
+        &:after {
+            content: "";
+            
+            display: block;
+            
+            position: absolute;
+            top: 130%;
+            right: 0;
+            z-index: 1;
+            
+            width: 0;
+            height: 3px;
+            background-color: #FCAC45;
+            
+            transition: all .2s linear;
+        }
+        
+        &:hover:before {
+            width: 50%;
+        }
+        
+        &:hover:after {
+            width: 50%;
+        }
+    }
+}
+
+// Адаптив
+
+@media (max-width: 770px) {
+    .nav {
+        display: none;
+        
+        width: 100%;
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        
+        background-color: $mainColor;
+        
+        &.active {
+            display: block;
+        }
+        
+        .nav__link {
+            display: block;
+            margin: 20px 0;
+            padding-right: 20px;
+            text-align: right;
+        }
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

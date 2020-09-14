@@ -1,0 +1,30 @@
+.team {
+    width: 100%;
+    background-color: $bgColor;
+    
+    padding: 90px 0 50px 0;
+}
+
+.team__inner {
+    margin-top: 80px;
+}
+
+.team__name {
+    margin-top: 16px;
+    
+    .name__logo {
+        font-size: 20px;
+        font-weight: 700;
+        
+        span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.team__text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 24px;
+}

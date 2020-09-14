@@ -1,0 +1,68 @@
+.title {
+    display: block;
+    
+    font-size: 44px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    
+    position: relative;
+    
+    span {
+        font-weight: 600;
+    }
+    
+    &:before,
+    &:after {
+        content: "";
+        
+        display: block;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        
+        background-color: $customColor;
+    }
+    
+    &:before {
+        width: 98.22px;
+        height: 4px;
+        top: 120%;
+        left: 45.5%;
+        
+        transform: translate(0, -45.5%);
+    }
+    
+    &:after {
+        width: 66.47px;
+        height: 4px;
+        top: 145%;
+        left: 47%;
+        
+        transform: translate(0, -47%);
+    }
+    
+    &--black {
+        color: $bgColor;
+    }
+}
+
+@media (max-width: 950px) {
+    .title {
+        
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 35px;
+    }
+}
+    

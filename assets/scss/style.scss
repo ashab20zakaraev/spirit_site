@@ -1,0 +1,75 @@
+// Переменные
+@import 'source/vars';
+@import 'source/container';
+@import 'source/menuBurger';
+@import 'source/title';
+@import 'source/cards';
+@import 'source/block';
+@import 'source/mainHeader';
+
+body {
+    margin: 0;
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    
+    cursor: pointer;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+// Импорты
+
+@import 'source/header';
+@import 'source/intro';
+@import 'source/about';
+@import 'source/team';
+@import 'source/services';
+@import 'source/work';
+@import 'source/testimonials';
+@import 'source/contact';
+@import 'source/footer';
+
+
