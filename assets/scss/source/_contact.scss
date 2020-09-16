@@ -80,7 +80,7 @@
     color: $white;
     text-transform: uppercase;
     
-    border: 1px solid #999999;
+    border: 1px solid #cecece;
     border-radius: 2px;
     
     transition: color .2s linear, background-color .2s linear;
@@ -88,6 +88,7 @@
     &:hover {
         background-color: $white;
         color: $customColor;
+        cursor: none;
     }
 }
 
