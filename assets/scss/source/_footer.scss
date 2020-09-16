@@ -43,6 +43,7 @@
         &:hover {
             color: $customColor;
             border: 2px solid $customColor;
+            cursor: none;
         }
     }
 }
